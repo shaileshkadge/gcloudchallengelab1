@@ -1,7 +1,7 @@
 # gcloudchallengelab1
 Getting Started Create and Manage Cloud Resourses: Challenge Lab |  Google cloud shell commands
 
-OPEN CLOUD SHELL AND PASTE THE BELOW COMMANDS AFTER INSERTING YOUR PROJECT ID IN FRONT OF IT.
+OPEN CLOUD SHELL AND PASTE THE BELOW COMMANDS 
 ---------------------------------------------------------------------------------------------------------------------
 
 
