@@ -95,7 +95,7 @@ gcloud compute forwarding-rules list
 **copy http content rule IP address from output.
 In new tab open the IP address
 For Example:
-http://34.120.223.29/
+http://PUT THE IP ADDRESS HERE/
 ***
 
 ***IF THE WEBPAGE DISPLAYS THE WELCOME INFORMATION CORRECTLY WITHOUT ANY ERROR THEN 
