@@ -9,8 +9,11 @@ gcloud compute project-info describe --project  (COPY AND PASTE YOUR PROJECT ID 
 
 
 export PROJECT_ID=(PUT YOUR PROJECT ID HERE)
+
 export ZONE= us-east1-b
+
 echo $PROJECT_ID
+
 echo $ZONE
 
 
