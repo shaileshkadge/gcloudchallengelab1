@@ -53,7 +53,11 @@ gcloud compute instance-templates create nginx-template \ --metadata-from-file s
 
 gcloud compute target-pools create nginx-pool
 
-gcloud compute instance-groups managed create nginx-group --base-instance-name nginx --size 2 --template nginx-template --target-pool nginx-pool
+gcloud compute instance-groups managed create nginx-group \
+         --base-instance-name nginx \
+         --size 2 \
+         --template nginx-template \
+         --target-pool nginx-pool
 
 gcloud compute instances list
 
@@ -67,14 +71,17 @@ gcloud compute instance-groups managed \
        --named-ports http:80
 
 
+
 gcloud compute backend-services create nginx-backend \
       --protocol HTTP --http-health-checks http-basic-check --global
+
 
 
 gcloud compute backend-services add-backend nginx-backend \
     --instance-group nginx-group \
     --instance-group-zone us-central1-a \
     --global
+
 
 
 gcloud compute url-maps create web-map \
@@ -86,10 +93,12 @@ gcloud compute target-http-proxies create http-lb-proxy \
     --url-map web-map
 
 
+
 gcloud compute forwarding-rules create http-content-rule \
         --global \
         --target-http-proxy http-lb-proxy \
         --ports 80
+
 
 gcloud compute forwarding-rules list
 
