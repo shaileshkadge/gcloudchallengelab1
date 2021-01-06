@@ -35,7 +35,7 @@ kubectl expose deployment hello-server --type=LoadBalancer --port 8080
 
 kubectl get service
 
----------------**CHECK YOUR SECOND PROGRESS NOW**------------------------------------------------------------------
+---------------**CHECK YOUR SECOND PROGRESS NOW**-------------------------------------------------------------------
 
 gcloud container clusters delete nucleus-cluster
 
